@@ -1,16 +1,13 @@
 package zod;
 import java.util.Scanner;
 /**
- *<h1>A Java class used to know the Zodiac Sign knowing the day and the month, if the date is invalid, it returns NULL</h1>
  * 
  * @version 1.0, 03/03/2022
  * @author Angel
  *
  */
 public class Zodiaco {
-    /**
-     * 
-     */
+
     public static void mensajeZod(){
         //Message shown when the sign is calculated
         int dia, mes;
@@ -21,12 +18,16 @@ public class Zodiaco {
         mes = Integer.parseInt(Sc.nextLine());//Specifies the month of the sign (1-12)
         System.out.println("Tu signo es: " + calculaSigno(dia,mes));//String that contains the name of the sign
         Sc.close();
-} 
-    public static String calculaSigno(int dia, int mes) {
-        /**@param dia Specifies the day of the month (1-31)
+}  /**
+        * Parameters
+        * @param dia Specifies the day of the month (1-31)
         * @param mes Specifies the month of the sign (1-12)
-        * @param signo String that contains the name of the sign
+        
         * @return The name of the sign according to the date introduced
+        */
+    public static String calculaSigno(int dia, int mes) {
+        /*
+        * @param signo String that contains the name of the sign
         */
         String signo = null;
         switch (mes) {
